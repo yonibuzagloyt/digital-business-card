@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="start">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="\nנור חליל"
+        android:textSize="45sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tvJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="עבודה כאן"
+        android:textSize="35sp" />
+    <TextView
+        android:id="@+id/tvOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="טלפון:\nאתר:\n"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="חייג"
+        android:textSize="22sp"/>
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="פתח אתר"
+        android:textSize="22sp"/>
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="שתף"
+        android:textSize="22sp"/>
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="חזור" />
+</LinearLayout>
