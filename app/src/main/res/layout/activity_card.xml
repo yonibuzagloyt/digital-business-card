@@ -3,26 +3,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="start">
+    android:layoutDirection="rtl">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/title"
-        android:text="\nנור חליל"
+        android:gravity="right"
+        android:text="\n—"
         android:textSize="45sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layoutDirection="rtl"/>
     <TextView
         android:id="@+id/tvJob"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="עבודה כאן"
+        android:gravity="right"
+        android:hint="—"
         android:textSize="35sp" />
     <TextView
         android:id="@+id/tvOther"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="טלפון:\nאתר:\n"
+        android:gravity="right"
+        android:text="טלפון: —\n—\n"
         android:textSize="25sp" />
     <Button
         android:id="@+id/btnCall"
@@ -47,5 +51,5 @@
         android:id="@+id/btnBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="חזור" />
+        android:text="חזרה לרשימה" />
 </LinearLayout>

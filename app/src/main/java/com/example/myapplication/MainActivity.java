@@ -10,7 +10,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-
+    public static final String KEY_NAME = "name";
+    public static final String KEY_JOB = "job";
+    public static final String KEY_PHONE = "phone";
+    public static final String KEY_WEBSITE = "website";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,13 +42,13 @@ public class MainActivity extends AppCompatActivity {
                     return;                         // לא עוברים מסך
                 }
                 Intent intent = new Intent(MainActivity.this, CardActivity.class);
-                intent.putExtra("name", name);
+                intent.putExtra(KEY_NAME, name);
                 String job = editJob.getText().toString().trim();
-                intent.putExtra("job", job);
+                intent.putExtra(KEY_JOB, job);
                 String phone = editPhone.getText().toString().trim();
-                intent.putExtra("phone", phone);
+                intent.putExtra(KEY_PHONE, phone);
                 String website = editWebsite.getText().toString().trim();
-                intent.putExtra("website", website);
+                intent.putExtra(KEY_WEBSITE, website);
                 startActivity(intent);
             }
         });
